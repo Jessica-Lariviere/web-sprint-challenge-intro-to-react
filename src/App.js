@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import axios from 'axios';
 import './App.css';
+import Character from './components/Character';
 
 const App = () => {
+  const [data, setData] = useState([]);
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 
